@@ -12,7 +12,7 @@ function loadFile(filePath) {
 var get_csv = (num_people, fee_type) => {
     let s = `${num_people}_${fee_type}.csv`
     var text = loadFile(s)
-    return text;
+    return text.split('\n');
 }
 
 var get_table = (lines) => {
