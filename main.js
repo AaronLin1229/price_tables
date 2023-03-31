@@ -23,24 +23,22 @@ var get_csv = (num_people, fee_type) => {
 //     return result;
 //   }
 
-var get_table = (lines) => {
-    let output = [];
-    for(var i = 0; i < lines.length; i++){
-        if(i === 0){
-            output.push("<thead><tr><th>"
-            + lines[i].split(",").join("</th><th>")
-            + "</th></tr></thead>");
-        }
-        else{
-            output.push("<tr><td>"
-            + lines[i].split(",").join("</td><td>")
-            + "</td></tr>");
-        }
-    }
-    return output;
-}
-
-
+// var get_table = (lines) => {
+//     let output = [];
+//     for(var i = 0; i < lines.length; i++){
+//         if(i === 0){
+//             output.push("<thead><tr><th>"
+//             + lines[i].split(",").join("</th><th>")
+//             + "</th></tr></thead>");
+//         }
+//         else{
+//             output.push("<tr><td>"
+//             + lines[i].split(",").join("</td><td>")
+//             + "</td></tr>");
+//         }
+//     }
+//     return output;
+// }
 
 var update_table = () => {
     let num_people = document.querySelector('input[name=x]:checked').value;
