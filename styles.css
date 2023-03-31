@@ -180,7 +180,7 @@ a:visited {
     color: #A7A1AE; 
 }
 
-a: hover{
+a:hover{
     color: orange; 
     text-decoration: underline;
 }
