@@ -46,7 +46,6 @@ var update_table = () => {
     let s = get_csv(num_people, fee_type);
     let table = get_table(s);
     table = table.join('');
-    // let new_innerhtml = get_element(table);
 
     document.getElementById('main-table').innerHTML = table;
 }
