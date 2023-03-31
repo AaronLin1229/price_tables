@@ -7,11 +7,18 @@ function loadFile(filePath) {
       result = xmlhttp.responseText;
     }
     return result;
-  }
+}
+
+function get_element(s) {
+  var div = document.createElement('div');
+  div.innerHTML = s.trim();
+  return div.firstChild;
+}
+
 
 var get_csv = (num_people, fee_type) => {
-    let s = `${num_people}_${fee_type}.csv`
-    var text = loadFile(s)
+    let s = `${num_people}_${fee_type}.csv`;
+    var text = loadFile(s);
     return text.split('\n');
 }
 
@@ -35,9 +42,11 @@ var get_table = (lines) => {
 var update_table = () => {
     let num_people = document.querySelector('input[name=x]:checked').value;
     let fee_type = document.querySelector('input[name=y]:checked').value;
-    // console.log(num_people, fee_type);
+
     let s = get_csv(num_people, fee_type);
     let table = get_table(s);
-    console.log(typeof table);
-    console.log(table);
+    table = table.join('');
+    // let new_innerhtml = get_element(table);
+
+    document.getElementById('main-table').innerHTML = table;
 }
