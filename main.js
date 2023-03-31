@@ -47,5 +47,4 @@ var update_table = () => {
     
     let s = get_csv(num_people, fee_type);
     let new_table = stringToHTML(get_table(s));
-    console.log(new_table);
 }
