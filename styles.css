@@ -44,13 +44,13 @@ h3 {
 	color: #FFF842;
 }
 
-
 .container th {
 	font-weight: bold;
 	font-size: 1.3em;
 	text-align: left;
 	background-color: #20252f;
 }
+
 
 .container td {
 	font-weight: normal;
@@ -166,4 +166,13 @@ nav label:hover {
 
 nav input:checked+label {
 	background: #617860;
+}
+
+footer {
+    text-align: center;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: orange; 
 }
