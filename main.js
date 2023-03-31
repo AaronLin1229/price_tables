@@ -1,4 +1,8 @@
-
+var stringToHTML = function (str) {
+	var dom = document.createElement('div');
+	dom.innerHTML = str;
+	return dom;
+}
 
 var get_csv = (num_people, fee_type) => {
     let s = `${num_people}_${fee_type}.csv`
@@ -33,10 +37,17 @@ var get_table = (lines) => {
             + "</td></tr>");
         }
     }
+    return output;
+}
+
 
 
 var update_table = () => {
-    let people = document.querySelector('input[name=x]:checked').value;
+    let num_people = document.querySelector('input[name=x]:checked').value;
     let fee_type = document.querySelector('input[name=y]:checked').value;
-    console.log(people, fee_type);
+    console.log(num_people, fee_type);
+    
+    let s = get_csv(num_people, fee_type);
+    let new_table = stringToHTML(get_table(s));
+    console.log(new_table);
 }
