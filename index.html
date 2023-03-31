@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<script src="main.js"></script>
+
+<h1><span class="blue">&lt;</span>獸無限<span class="blue">&gt;</span> <span class="yellow">房價速查表</pan></h1>
+<h2>By秋墨</a></h2>
+
+<nav class='people_count'>
+    <input type="radio" id="2ppl" value='2' name="x" onclick='update_table()'/>
+    <label for="2ppl">2人</label>
+
+    <input type="radio" id="3ppl" value='3' name="x" onclick='update_table()'/>
+    <label for="3ppl">3人</label>
+
+    <input type="radio" id="4ppl" value='4' name="x" onclick='update_table()' checked/>
+    <label for="4ppl">4人</label>
+
+    <input type="radio" id="5ppl" value='5' name="x" onclick='update_table()'/>
+    <label for="5ppl">5人</label>
+</nav>
+
+<br>
+
+<nav class='money_type'>
+    <input type="radio" id="avg" value='avg' name="y" onclick='update_table()' checked />
+    <label for="avg">平均</label>
+
+    <input type="radio" id="total" value='total' onclick='update_table()' name="y"/>
+    <label for="total">總價</label>
+</nav>
+
+<div>
+<table class='container'><thead><tr><th>房型</th><th>3晚</th><th>4晚</th><th>5晚</th></tr></thead><tr><td>市景豪華客房</td><td>8250</td><td>10750</td><td>13250</td></tr><tr><td>市景精緻客房</td><td>8700</td><td>11350</td><td>14000</td></tr><tr><td>海景豪華客房</td><td>9900</td><td>12950</td><td>16000</td></tr><tr><td>海景和式雙人房</td><td>10350</td><td>13550</td><td>16750</td></tr><tr><td>市景精緻雙人房 (露營主題)</td><td>10350</td><td>13550</td><td>16750</td></tr><tr><td>經典套房A</td><td>13200</td><td>17350</td><td>21500</td></tr><tr><td>經典套房B</td><td>13950</td><td>18350</td><td>22750</td></tr><tr><td>海景蜜月套房</td><td>15000</td><td>19750</td><td>24500</td></tr><tr><td>豪華套房</td><td>15300</td><td>20150</td><td>25000</td></tr></table>
+</div>
