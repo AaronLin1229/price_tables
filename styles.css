@@ -173,14 +173,14 @@ footer {
 }
 
 a {
-    color: orange; 
+    color: orange;
 }
 
-a:visited { 
-    color: #A7A1AE; 
+a:visited {
+    color: #A7A1AE;
 }
 
-a:hover{
-    color: orange; 
+a:hover {
+    color: orange;
     text-decoration: underline;
 }
